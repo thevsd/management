@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>User login</title>
-        <link rel = "stylesheet" type="text/css" href="registration.css">
+        <link rel = "stylesheet" type="text/css" href="style.css">
     </head>
 
     <body>
@@ -10,7 +10,7 @@
             <h2>Login</h2>
         </div>
 
-        <form method="POST" action="login.php">
+        <form method="POST" action="index.php">
             <div class="input-group">
                 <lable>Username</label>
                 <input type="text" name="username">

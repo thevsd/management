@@ -29,6 +29,15 @@ form {
     border-radius: 0px 0px 10px 10px;
 }
 
+.alert {
+    width: 30%;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #B0C4DE;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+}
+
 .input-group {
     margin: 10px 0px 10px 0px;
 }
@@ -63,6 +72,17 @@ form {
     padding: 10px;
     border: 1px solid #a94442;
     color: #a94442;
+    background: #f2dede;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.success {
+    width: 30%;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #00FFAB;
+    color: #00FFAB;
     background: #f2dede;
     border-radius: 5px;
     text-align: left;

@@ -10,7 +10,7 @@
 
         <style type="text/css">
             body{
-				background: url(wallpaper.jpg);
+				background: url(wallpaper.png);
 				background-size: cover;
                 margin: 0;
                 padding: 0;
@@ -73,22 +73,26 @@
                 <th>Address</th>
             </tr>
 
-				<?php
-					include('db_connect.php');
-					
-					$sql = "SELECT customerID, fullName, dateOfBirth, address from customers";
-					$result = $db-> query($sql);
-					if($result-> num_rows > 0) {
-						while($row = $result-> fetch_assoc()) {
-							echo "<tr><td>". $row["customerID"] ."</td><td>". $row["fullName"] ."</td><td>". $row["dateOfBirth"] ."</td><td>". $row["address"]. "</td></tr>";
-						}
-						echo "</table>";
-					} else {
-						echo "0 results";
-					}
+            <?php
+            $conn = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "b3b904e2b6a5bd", "c89c04f9", "heroku_5abb989acb9536e");
+            if($conn-> connect_error) {
+                die("Connection failed:". $conn-> connect_error);
+            }
 
-				?>
-        	</table>
+            $sql = "SELECT customerID, fullName, dateOfBirth, address from customers";
+            $result = $conn-> query($sql);
+            if($result-> num_rows > 0) {
+                while($row = $result-> fetch_assoc()) {
+                    echo "<tr><td>". $row["customerID"] ."</td><td>". $row["fullName"] ."</td><td>". $row["dateOfBirth"] ."</td><td>". $row["address"]. "</td></tr>";
+                }
+                echo "</table>";
+            } else {
+                echo "0 results";
+            }
+
+            $conn-> close();
+            ?>
+        </table>
         </p>
     </body>
 </html>

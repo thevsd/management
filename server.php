@@ -1,12 +1,9 @@
 <?php
     //Connect to database
-    $db = mysqli_connect("us-cdbr-iron-east-01.cleardb.net", "b3b904e2b6a5bd", "c89c04f9", "heroku_5abb989acb9536e");
-		if($db-> connect_error) {
-			die("Connection failed:". $db-> connect_error);
-        }
+    include('db_connect.php');
     //errors array
     $errors = array('user' => '', 'email' => '', 'password' => '', 'password2' => '');
-    
+
     //if the register button is pressed 
     if(isset($_POST['register'])) {
         $username = $_POST['username'];
@@ -35,6 +32,7 @@
         if(!array_filter($errors)) {
             $sql = "INSERT INTO phpusers (username, password, email) VALUES ('$username','$password', '$email')";
             mysqli_query($db, $sql);
+            include('regis_success.php');
         }
     }
 
