@@ -2,10 +2,11 @@
 <html>
     <head>
         <title>User registration</title>
-        <link rel = "stylesheet" type="text/css" href="style.css">
+        <link rel = "stylesheet" type="text/css" href="style/style.css">
     </head>
 
     <body>
+
         <div class="header">
             <h2>Register</h2>
         </div>
@@ -41,7 +42,6 @@
         </form>
 
         <?php include('server.php'); ?>
-
         <!-- display errors if occur -->
         <?php include('errors.php');?>
 

@@ -1,5 +1,0 @@
-app:
-https://anonvendortest.herokuapp.com/
-
-git:
-https://git.heroku.com/anonvendortest.git

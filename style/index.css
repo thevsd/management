@@ -1,0 +1,101 @@
+body{
+    background: url(wallpaper.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    background-repeat: no-repeat;
+}
+
+.Header{
+    width: 100vw;
+    background-color: #62D1C7;
+    color: white;
+    padding: 5px;
+}
+
+.main{
+    border-radius: 10px;
+    width: 800px;
+    background-color: #FFE061;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.enlarge{
+    font-size: 140%;
+    padding: 20px;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: #5F9EA0;
+    border: none;
+    border-radius: 5px;
+}
+
+.input-group {
+    margin: 10px 0px 10px 0px;
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+
+.input-group input {
+    height: 30px;
+    width: 300px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+form {
+    width: 30%;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #B0C4DE;
+    background: #FFE061;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.error {
+    width: 30%;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background: #f2dede;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.success {
+    width: 30%;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #00FFAB;
+    color: #004040;
+    background: #00FFDF;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.header {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background: #5F9EA0;
+    text-align: center;
+    border: 1px solid #B0C4DE;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+}

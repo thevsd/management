@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>User login</title>
-        <link rel = "stylesheet" type="text/css" href="style.css">
+        <title>Login</title>
+        <link rel = "stylesheet" type="text/css" href="style/style.css">
     </head>
 
     <body>
         <div class="header">
-            <h2>Login</h2>
+            <h2>Log In</h2>
         </div>
 
-        <form method="POST" action="index.php">
+        <form method="post" action="login.php">
             <div class="input-group">
-                <lable>Username</label>
-                <input type="text" name="username">
+                <lable>Username or Email</label>
+                <input type="text" name="username" value="<?php echo $username; ?>">
             </div>
 
             <div class="input-group">
@@ -26,8 +26,13 @@
             </div>
 
             <p>
-                Not a member yet? <a href="register.php">Sign up</a>
+                Not a member? <a href="register.php">Sign up</a>
             </p>
         </form>
+
+        <?php include('server.php'); ?>
+        <!-- display errors if occur -->
+        <?php include('errors.php');?>
+
     </body>
 </html>
